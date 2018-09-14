@@ -9,3 +9,8 @@
     [self.view addSubview:scrollView];
     scrollView.delegate = self;    
         
+#### 3.使用代理回调 UILabel 的点击事件    
+    - (void)dn_textScrollViewSelectedAtIndex:(NSInteger)index content:(NSString *)content {
+    
+        NSLog(@"%ld---------%@",index,content);
+    }
