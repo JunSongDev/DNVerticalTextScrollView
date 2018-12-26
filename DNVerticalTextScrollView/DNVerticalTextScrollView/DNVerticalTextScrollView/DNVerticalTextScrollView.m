@@ -174,6 +174,7 @@
 
 - (void)setDataArray:(NSArray *)dataArray {
     _dataArray = dataArray;
+    [self layoutSubviews];
     [self addTimer];
 }
 

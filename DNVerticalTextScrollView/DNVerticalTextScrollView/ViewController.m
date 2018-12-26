@@ -19,10 +19,11 @@
     
     [super viewDidLoad];
         
-    DNVerticalTextScrollView * scrollView = [[DNVerticalTextScrollView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 50)];
+    DNVerticalTextScrollView * scrollView = [[DNVerticalTextScrollView alloc] init];
+    scrollView.frame = CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 50);
+    scrollView.dataArray = @[@"我是谁",@"我在哪",@"我在干什么"];
     [self.view addSubview:scrollView];
     scrollView.delegate = self;
-    scrollView.dataArray = @[@"我是谁",@"我在哪",@"我在干什么"];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
